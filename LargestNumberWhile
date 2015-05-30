@@ -1,0 +1,49 @@
+public class LargestNumberWhile {
+
+	public static void main(String[] args) {
+
+
+	}
+	int [] array1 = {8,19,7};
+	int [] array2 = {};
+	int [] array3 = null;
+	int [] array4 = {36,89,48,76,208};
+	LargestNumberWhileLoop(array1);
+	LargestNumberUsingWhileLoop(array2);
+	LargestNumberUsingWhileLoop(array3);
+	LargestNumberUsingWhileLoop(array4);
+}
+
+static void LargestNumberUsingWhileLoop (int [] inputArray)
+{
+	if (inputArray != null) 
+	{
+		if (inputArray.length > 0) 
+		{
+			int largestNumber=inputArray[0];
+			int i = 0;
+
+			while (i < inputArray.length) 
+			{
+				if (largestNumber<inputArray[i])
+				{
+					largestNumber=inputArray[i];
+				}
+				i++;
+			}
+
+			System.out.println("The Largest Number I found is: " + largestNumber); 
+		}
+		else
+		{
+			System.out.println("You gave me a null array"); 
+		}
+	}		
+	else
+	{
+		System.out.println("You gave me a null array"); 
+	}
+}
+
+}
+
